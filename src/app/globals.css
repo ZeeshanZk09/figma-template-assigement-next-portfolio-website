@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Default dark mode */
+:root {
+  --background: #171717; /* Dark background */
+  --foreground: #ffffff; /* Light foreground */
+
+  
+}
+
+/* Light mode support */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ededed;  /* Light background */
+    --foreground: #0a0a0a;  /* Dark foreground */
+  }
+}
+
+/* Apply the colors to the body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--background);
+  background: var(--foreground);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom text balancing utility */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance; /* Supported in modern browsers */
+    word-wrap: break-word; /* Fallback for older browsers */
+    overflow-wrap: break-word; /* Another fallback */
+  }
+}
