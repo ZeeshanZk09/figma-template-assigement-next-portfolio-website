@@ -4,7 +4,7 @@ function Services() {
   return (
     <section className="py-16 px-6 md:px-16 bg-white">
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold">Services</h2>
+        <h2 className="text-3xl font-bold text-black">Services</h2>
         <p className="text-gray-600 mt-4">
           Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium.
         </p>
@@ -16,8 +16,8 @@ function Services() {
           <div className="flex justify-center mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-12 h-12"
-              fill="none"
+              className="w-12 h-12 text-green-950"
+              fill="green"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
@@ -29,7 +29,7 @@ function Services() {
               />
             </svg>
           </div>
-          <h3 className="text-xl font-semibold text-center mb-2">UI/UX</h3>
+          <h3 className="text-xl font-semibold text-center mb-2 text-black">UI/UX</h3>
           <p className="text-gray-600 text-center">
             Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum.
           </p>
@@ -40,8 +40,8 @@ function Services() {
           <div className="flex justify-center mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-12 h-12"
-              fill="none"
+              className="w-12 h-12 text-green-950"
+              fill="green"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
@@ -53,7 +53,7 @@ function Services() {
               />
             </svg>
           </div>
-          <h3 className="text-xl font-semibold text-center mb-2">Web Design</h3>
+          <h3 className="text-xl font-semibold text-center mb-2 text-black">Web Design</h3>
           <p className="text-gray-600 text-center">
             Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum.
           </p>
@@ -64,8 +64,8 @@ function Services() {
           <div className="flex justify-center mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-12 h-12"
-              fill="none"
+              className="w-12 h-12 text-green-950"
+              fill="green"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
@@ -77,7 +77,7 @@ function Services() {
               />
             </svg>
           </div>
-          <h3 className="text-xl font-semibold text-center mb-2">App Design</h3>
+          <h3 className="text-xl font-semibold text-center mb-2 text-black">App Design</h3>
           <p className="text-gray-600 text-center">
             Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum.
           </p>
@@ -88,8 +88,8 @@ function Services() {
           <div className="flex justify-center mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-12 h-12"
-              fill="none"
+              className="w-12 h-12 text-green-950"
+              fill="green"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
@@ -101,7 +101,7 @@ function Services() {
               />
             </svg>
           </div>
-          <h3 className="text-xl font-semibold text-center mb-2">Graphic Design</h3>
+          <h3 className="text-xl font-semibold text-center mb-2 text-black">Graphic Design</h3>
           <p className="text-gray-600 text-center">
             Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum.
           </p>

@@ -30,12 +30,12 @@ function Hero() {
 
       {/* Text Section */}
       <div className="mt-8 md:mt-0 w-full md:w-1/2 flex flex-col text-center md:text-left items-center md:items-start">
-        <p className="text-lg font-light">Hi I am</p>
+        <p className="text-lg font-light text-black">Hi I am</p>
         <span className="text-[#04AF70] text-2xl md:text-4xl 2xl:text-5xl">Muhammad Zeeshan Khan</span>
         <br />
         <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-bold">
-          <span className="block">Web & Mobile App</span>
-          <span className="block">Developer</span>
+          <span className="block  text-black">Web & Mobile App</span>
+          <span className="block  text-black">Developer</span>
         </h1>
         <p className="mt-4 text-gray-600 text-base md:text-lg max-w-lg">
           Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra.

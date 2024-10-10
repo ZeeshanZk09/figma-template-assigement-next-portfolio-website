@@ -11,7 +11,7 @@ function About() {
 
       {/* Text and Skill Bars Section */}
       <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-10 text-center md:text-left">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-black">About Me</h2>
         <p className="text-gray-600 mb-6">
           Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra.
         </p>
@@ -20,7 +20,7 @@ function About() {
         <div className="space-y-4">
           {/* Skill Bar 1 */}
           <div className="flex items-center justify-between">
-            <span className="font-semibold text-sm sm:text-base">UX</span>
+            <span className="font-semibold text-sm sm:text-base text-black">UX</span>
             <div className="w-3/5 sm:w-4/5 relative">
               <div className="h-1 bg-gray-300 rounded-full">
                 <div className="h-1 bg-[#04AF70] rounded-full w-4/5"></div>
@@ -30,7 +30,7 @@ function About() {
 
           {/* Skill Bar 2 */}
           <div className="flex items-center justify-between">
-            <span className="font-semibold text-sm sm:text-base">Website Design</span>
+            <span className="font-semibold text-sm sm:text-base text-black">Website Design</span>
             <div className="w-3/5 sm:w-4/5 relative">
               <div className="h-1 bg-gray-300 rounded-full">
                 <div className="h-1 bg-[#04AF70] rounded-full w-3/5"></div>
@@ -40,7 +40,7 @@ function About() {
 
           {/* Skill Bar 3 */}
           <div className="flex items-center justify-between">
-            <span className="font-semibold text-sm sm:text-base">App Design</span>
+            <span className="font-semibold text-sm sm:text-base text-black">App Design</span>
             <div className="w-3/5 sm:w-4/5 relative">
               <div className="h-1 bg-gray-300 rounded-full">
                 <div className="h-1 bg-[#04AF70] rounded-full w-2/5"></div>
@@ -50,7 +50,7 @@ function About() {
 
           {/* Skill Bar 4 */}
           <div className="flex items-center justify-between">
-            <span className="font-semibold text-sm sm:text-base">Graphic Design</span>
+            <span className="font-semibold text-sm sm:text-base text-black">Graphic Design</span>
             <div className="w-3/5 sm:w-4/5 relative">
               <div className="h-1 bg-gray-300 rounded-full">
                 <div className="h-1 bg-[#04AF70] rounded-full w-full"></div>
