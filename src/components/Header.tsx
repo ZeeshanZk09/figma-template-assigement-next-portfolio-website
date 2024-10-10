@@ -47,13 +47,13 @@ export default function Header() {
         <div className="flex sm:hidden w-[10%] justify-end">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-end rounded-md p-2.5 text-gray-900"
+            className="-m-2.5 inline-flex items-center justify-end rounded-md p-2.5 text-black"
             onClick={handleToggleMenu}
           >
             <span className="sr-only">Open dropdown menu</span>
             <svg
-              className="h-10 w-10"
-              fill="none"
+              className="h-10 w-10 text-black"
+              fill="black"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
@@ -69,7 +69,7 @@ export default function Header() {
         </div>
         {/* Center Links - Fixed */}
         <div className="hidden sm:block nav-links  sm:w-[50%] z-50 py-4">
-          <ul className="flex sm:flex  sm:text-[0.667rem] md:text-[0.778rem] lg:text-[1rem] xl:text-[1.278rem] 2xl:text-[1.556rem] sm:justify-between sm:justify-self-center">
+          <ul className="flex sm:flex  sm:text-[0.667rem] md:text-[0.778rem] text-black lg:text-[1rem] xl:text-[1.278rem] 2xl:text-[1.556rem] sm:justify-between sm:justify-self-center">
             <li>
               <Link
                 href="#hero"
@@ -159,8 +159,8 @@ export default function Header() {
             >
               <span className="sr-only">Close mobile menu</span>
               <svg
-                className="h-6 w-6"
-                fill="none"
+                className="h-6 w-6 text-black"
+                fill="black"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
@@ -176,7 +176,7 @@ export default function Header() {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 ">
-              <ul className="space-y-2 py-6">
+              <ul className="space-y-2 py-6 text-black">
                 <li>
                   <Link
                     href="/"
@@ -229,7 +229,7 @@ export default function Header() {
               <div className="py-6">
                 <Link
                   href="/assets/images/ZK Resume.pdf"
-                  className="relative w-fit px-2 py-1 font-medium bg-[#04af7080]   rounded-lg  outline-transparent z-50 overflow-hidden "
+                  className="relative w-fit px-2 py-1 font-medium bg-[#04af7080]   rounded-lg  outline-transparent z-50 text-black overflow-hidden "
                 >
                   Download CV
                 </Link>
