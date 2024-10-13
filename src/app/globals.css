@@ -29,6 +29,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+::selection{
+  background: #04af7085;
+}
+
+
 /* Custom text balancing utility */
 @layer utilities {
   .text-balance {

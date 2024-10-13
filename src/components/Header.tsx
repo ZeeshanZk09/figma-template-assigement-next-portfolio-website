@@ -30,13 +30,13 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="absolute mx-4 my-2 inset-x-0 top-0 z-50">
-      <nav className="flex items-center justify-between  " aria-label="Global">
+    <header className=" mx-4  my-2 inset-x-0 top-0 z-50">
+      <nav className="flex w-full  items-center justify-between  " aria-label="Global">
         <div className="flex w-fit  ">
           <Link href="/" className=" w-fit">
             <span className="sr-only">Zk Muhammad Zeeshan Khan</span>
             <Image
-              className="w-44 md:w-52 lg:w-60 xl:w-72 2xl:w-80"
+              className="w-48 md:w-52 lg:w-60 xl:w-72 2xl:w-80"
               src="/assets/images/Logo.svg"
               alt="ZK logo"
               width={100}
@@ -68,8 +68,8 @@ export default function Header() {
           </button>
         </div>
         {/* Center Links - Fixed */}
-        <div className="hidden sm:block nav-links  sm:w-[50%] z-50 py-4">
-          <ul className="flex sm:flex  sm:text-[0.667rem] md:text-[0.778rem] text-black lg:text-[1rem] xl:text-[1.278rem] 2xl:text-[1.556rem] sm:justify-between sm:justify-self-center">
+        <div className="hidden  sm:flex sm:items-center nav-links  overflow-hidden sm:w-[50%] z-50 ">
+          <ul className="flex  fixed bg-[#f5f0f08a] backdrop-blur-xl p-3 rounded-full w-[50%] sm:flex  sm:text-[0.667rem] md:text-[0.778rem] text-black lg:text-[1rem] xl:text-[1.278rem] 2xl:text-[1.556rem] sm:justify-between sm:justify-self-center">
             <li>
               <Link
                 href="#hero"
