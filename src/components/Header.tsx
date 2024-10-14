@@ -30,7 +30,7 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className=" mx-4  my-2 bg-white inset-x-0 top-0 z-50">
+    <header className="  bg-white inset-x-0 top-0 z-50">
       <nav className="flex w-full  items-center justify-between  " aria-label="Global">
         <div className="flex w-fit  ">
           <Link href="/" className=" w-fit">
