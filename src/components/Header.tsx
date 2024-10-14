@@ -30,7 +30,7 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className=" m-2  bg-white inset-x-0 top-0 z-50">
+    <header className=" m-6  bg-white inset-x-0 top-0 z-50">
       <nav className="flex w-full  items-center justify-between  " aria-label="Global">
         <div className="flex w-fit  ">
           <Link href="/" className=" w-fit">
@@ -231,6 +231,7 @@ export default function Header() {
                 <Link
                   href="/assets/images/ZK Resume.pdf"
                   target="_blank"
+                  download={true}
                   className="relative w-fit px-2 py-1 font-medium bg-[#04af7080]   rounded-lg  outline-transparent z-50 text-black overflow-hidden "
                 >
                   Download CV
