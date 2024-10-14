@@ -30,7 +30,7 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="  bg-white inset-x-0 top-0 z-50">
+    <header className=" m-2  bg-white inset-x-0 top-0 z-50">
       <nav className="flex w-full  items-center justify-between  " aria-label="Global">
         <div className="flex w-fit  ">
           <Link href="/" className=" w-fit">
@@ -135,7 +135,7 @@ export default function Header() {
 
       {isMobileMenuOpen && (
         <div
-          className="lg:hidden absolute top-0 left-0 right-0 z-50 w-full m-1 mr-6 p-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-[#57ff9db4] rounded backdrop-blur-3xl"
+          className="lg:hidden absolute top-0 left-0 right-0 z-50 w-full  p-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-[#57ff9db4] rounded backdrop-blur-3xl"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile Menu"
