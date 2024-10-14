@@ -176,7 +176,7 @@ export default function Header() {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="-my-6 ">
+            <div className="my-2 mx-1 p-2 ">
               <ul className="space-y-2 py-6 text-black">
                 <li>
                   <Link
