@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 
-/* Default dark mode */
+
 :root {
-  --background: #171717; /* Dark background */
-  --foreground: #ffffff; /* Light foreground */
+  --background: #ffffff; 
+  --foreground: #171717; 
 
   
 }
 
-/* Light mode support */
-@media (prefers-color-scheme: light) {
+
+@media (prefers-color-scheme: dark) {
   :root {
-    --background: #ededed;  /* Light background */
-    --foreground: #0a0a0a;  /* Dark foreground */
+    --foreground: #ededed;  /* Light background */
+    --background: #0a0a0a;  /* Dark foreground */
   }
 }
 
@@ -24,8 +24,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--background);
-  background: var(--foreground);
+  background: var(--background);
+  color: var(--foreground);
   font-family: 'Poppins', sans-serif;
 }
 
