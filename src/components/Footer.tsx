@@ -13,7 +13,7 @@ function Footer() {
             alt="Muhammad Zeeshan Khan Logo"
             width={500} // Adjusted width for smaller screens
             height={500}
-            className="w-100 h-100 mb-4"
+            className="w-64 h-14 mb-4"
           />
           <nav className="flex flex-wrap justify-center text-sm md:text-lg space-x-4 text-gray-700">
             <Link href="/" className="hover:text-gray-500">
