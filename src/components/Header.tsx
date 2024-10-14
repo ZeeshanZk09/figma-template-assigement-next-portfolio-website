@@ -124,6 +124,7 @@ export default function Header() {
         <div className="hidden sm:flex w-fit sm:justify-end ">
           <Link
             href="/assets/docs/ZK Resume.pdf"
+            target="_blank"
             id="loginBtn"
             className="relative w-fit px-2 py-1 sm:text-[0.778rem] md:text-[1rem] lg:text-[1.278rem] xl:text-[1.556rem] 2xl:text-[1.944rem] font-semibold bg-[#04AF70]  border-2 border-white rounded-lg cursor-pointer outline-none z-50 overflow-hidden"
           >
