@@ -135,7 +135,7 @@ export default function Header() {
 
       {isMobileMenuOpen && (
         <div
-          className="lg:hidden absolute top-0 left-0 right-0 z-50 w-full my-1 mx-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-[#57ff9db4] rounded backdrop-blur-3xl"
+          className="lg:hidden absolute top-0 left-0 right-0 z-50 w-full my-2 mx-4 p-1 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-[#57ff9db4] rounded backdrop-blur-3xl"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile Menu"
@@ -230,6 +230,7 @@ export default function Header() {
               <div className="py-6">
                 <Link
                   href="/assets/images/ZK Resume.pdf"
+                  target="_blank"
                   className="relative w-fit px-2 py-1 font-medium bg-[#04af7080]   rounded-lg  outline-transparent z-50 text-black overflow-hidden "
                 >
                   Download CV
