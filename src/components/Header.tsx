@@ -135,7 +135,7 @@ export default function Header() {
 
       {isMobileMenuOpen && (
         <div
-          className="lg:hidden absolute top-0 left-0 right-0 z-50 w-full m-3  p-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-[#57ff9db4] rounded backdrop-blur-3xl"
+          className="lg:hidden absolute top-0 left-0 right-0 z-50 w-full m-1  p-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-[#57ff9db4] rounded backdrop-blur-3xl"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile Menu"
