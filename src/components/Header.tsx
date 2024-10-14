@@ -30,7 +30,7 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className=" m-6 absolute bg-white inset-x-0 top-0 z-50">
+    <header className=" m-6 absolute bg-transparent inset-x-0 top-0 z-50">
       <nav className="flex w-full  items-center justify-between  " aria-label="Global">
         <div className="flex w-fit  ">
           <Link href="/" className=" w-fit">
@@ -39,8 +39,8 @@ export default function Header() {
               className="w-56  lg:w-60 xl:w-72 2xl:w-80"
               src="/assets/images/Logo.svg"
               alt="ZK logo"
-              width={100}
-              height={50}
+              width={500}
+              height={500}
             />
           </Link>
         </div>
