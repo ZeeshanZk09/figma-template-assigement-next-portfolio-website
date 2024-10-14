@@ -135,7 +135,7 @@ export default function Header() {
 
       {isMobileMenuOpen && (
         <div
-          className="lg:hidden absolute top-0 left-0 right-0 z-50 w-full p-3 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-[#57ff9db4] rounded backdrop-blur-3xl"
+          className="lg:hidden absolute top-0 left-0 right-0 z-50 w-full my-2 mx-1 p-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-[#57ff9db4] rounded backdrop-blur-3xl"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile Menu"
@@ -176,8 +176,8 @@ export default function Header() {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="my-2 mx-1 p-2 ">
-              <ul className="space-y-2 py-6 text-black">
+            <div className=" ">
+              <ul className="space-y-2  text-black">
                 <li>
                   <Link
                     href="/"
