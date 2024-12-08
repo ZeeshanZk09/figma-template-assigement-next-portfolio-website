@@ -1,10 +1,9 @@
 import * as React from 'react';
-import Hero from '@/components/Hero/Hero'
-import About from '@/components/About/About'
-import Services from '@/components/Services'
+import Hero from '@/components/hero/Hero'
+import About from '@/components/about/About'
 import Projects from '@/components/Projects'
 import Testimonials from '@/components/Testimonials'
-import ContactMe from '@/components/Contact-me'
+// import ContactMe from '@/components/ContactMe'
 
 
 export default function Home() {
@@ -12,10 +11,9 @@ export default function Home() {
    <>
       <Hero />
       <About />
-      <Services />
       <Projects />
       <Testimonials />
-      <ContactMe />
+      {/* <ContactMe /> */}
    </>
   );
 }

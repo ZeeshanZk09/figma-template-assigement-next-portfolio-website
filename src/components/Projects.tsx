@@ -9,3 +9,15 @@ function Projects() {
 }
 
 export default Projects
+
+
+
+const Projects2 = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export {Projects2}

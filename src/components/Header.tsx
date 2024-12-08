@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+// import {Projects2} from '@/components/Projects' 
 import Image from "next/image";
 
 export default function Header() {
@@ -14,7 +15,7 @@ export default function Header() {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setIsMobileMenuOpen(false);
+        setIsMobileMenuOpen(true);
       }
     };
 
@@ -24,10 +25,16 @@ export default function Header() {
       document.removeEventListener("mousedown", handleClickOutside);
     }
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+ 
   }, [isMobileMenuOpen]);
+
+  const navLinks = [
+    { href: "#hero", label: "Home" },
+    { href: "#about", label: "About Me" },
+    { href: "/services", label: "Services" },
+    { href: "#projects", label: "Projects" },
+  ];
 
   return (
     <header className=" m-6 absolute bg-transparent inset-x-0 top-0 z-50">
@@ -70,54 +77,13 @@ export default function Header() {
         {/* Center Links - Fixed */}
         <div className="hidden  sm:flex sm:items-center nav-links  overflow-hidden sm:w-[50%] z-50 ">
           <ul className="flex  fixed bg-[#f5f0f08a] backdrop-blur-xl p-3 rounded-full w-[50%] sm:flex  sm:text-[0.667rem] md:text-[0.778rem] text-black lg:text-[1rem] xl:text-[1.278rem] 2xl:text-[1.556rem] sm:justify-between sm:justify-self-center">
-            <li>
-              <Link
-                href="#hero"
-                className=" font-normal hover:underline leading-6 "
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#about"
-                className=" font-normal hover:underline leading-6 "
-              >
-                About Me
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#services"
-                className=" font-normal hover:underline leading-6"
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#projects"
-                className=" font-normal hover:underline leading-6 "
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#testimonials"
-                className=" font-normal hover:underline leading-6 "
-              >
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#contact"
-                className=" font-normal hover:underline leading-6 "
-              >
-                Contact
-              </Link>
-            </li>
+            {navLinks.map(({href,label},index) => (
+              <li key={index}>
+                <Link href={href} className=" font-normal hover:underline leading-6 ">
+                  {label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -135,12 +101,12 @@ export default function Header() {
 
       {isMobileMenuOpen && (
         <div
-          className="lg:hidden fixed top-0 left-0 right-0 z-50 w-full   p-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-[#57ff9db4] rounded backdrop-blur-3xl"
+          className="lg:hidden fixed inset-x-0 top-0 left-0 right-0 z-50 w-full   p-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-[#57ff9db4] rounded backdrop-blur-3xl"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile Menu"
           ref={menuRef}
-          style={{ insetBlockStart: "0", top: "0" }}
+          // style={{ insetBlockStart: "0", top: "0" }}
         >
           <div className="flex items-center justify-between ">
             <Link href="/" className="-m-1.5 p-1.5  ">
@@ -178,54 +144,13 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className=" ">
               <ul className="space-y-2  text-black">
-                <li>
-                  <Link
-                    href="/"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7  "
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#about"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7  "
-                  >
-                    About Me
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#services"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7  "
-                  >
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#projects"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7  "
-                  >
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#testimonials"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7  "
-                  >
-                    Testimonials
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#contact"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7  "
-                  >
-                    Contact
-                  </Link>
-                </li>
+                {navLinks.map(({ href, label }, index) => (
+                  <li key={index}>
+                    <Link href={href} className=" font-normal hover:underline leading-6 ">
+                      {label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
               <div className="py-6">
                 <Link
