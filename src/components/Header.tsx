@@ -30,15 +30,18 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   const navLinks = [
-    { href: "#hero", label: "Home" },
-    { href: "#about", label: "About Me" },
+    { href: "/#hero", label: "Home" },
+    { href: "/about", label: "About Me" },
     { href: "/services", label: "Services" },
-    { href: "#projects", label: "Projects" },
+    { href: "/projects", label: "Projects" },
   ];
 
   return (
-    <header className=" m-6 absolute bg-transparent inset-x-0 top-0 z-50">
-      <nav className="flex w-full  items-center justify-between  " aria-label="Global">
+    <header className="  h-28  bg-transparent inset-x-0 top-0 z-50">
+
+      {/* Desktop view version */}
+
+      <div className="flex w-full  items-center justify-between  " aria-label="Global">
         <div className="flex w-fit  ">
           <Link href="/" className=" w-fit">
             <span className="sr-only">Zk Muhammad Zeeshan Khan</span>
@@ -75,8 +78,8 @@ export default function Header() {
           </button>
         </div>
         {/* Center Links - Fixed */}
-        <div className="hidden  sm:flex sm:items-center nav-links  overflow-hidden sm:w-[50%] z-50 ">
-          <ul className="flex  fixed bg-[#f5f0f08a] backdrop-blur-xl p-3 rounded-full w-[50%] sm:flex  sm:text-[0.667rem] md:text-[0.778rem] text-black lg:text-[1rem] xl:text-[1.278rem] 2xl:text-[1.556rem] sm:justify-between sm:justify-self-center">
+        <nav className="hidden  sm:flex sm:items-center nav-links  overflow-hidden sm:w-[50%] z-50 ">
+          <ul className="flex  fixed bg-[#f5f0f0] backdrop-blur-xl p-3 rounded-full w-[50%] sm:flex  sm:text-[0.667rem] md:text-[0.778rem] text-black lg:text-[1rem] xl:text-[1.278rem] 2xl:text-[1.556rem] sm:justify-between sm:justify-self-center">
             {navLinks.map(({href,label},index) => (
               <li key={index}>
                 <Link href={href} className=" font-normal hover:underline leading-6 ">
@@ -85,7 +88,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
 
         <div className="hidden sm:flex w-fit sm:justify-end ">
           <Link
@@ -97,7 +100,9 @@ export default function Header() {
             Download CV
           </Link>
         </div>
-      </nav>
+      </div>
+
+      {/*  Mobile view version*/}
 
       {isMobileMenuOpen && (
         <div
@@ -142,7 +147,7 @@ export default function Header() {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className=" ">
+            <nav className=" ">
               <ul className="space-y-2  text-black">
                 {navLinks.map(({ href, label }, index) => (
                   <li key={index}>
@@ -162,7 +167,7 @@ export default function Header() {
                   Download CV
                 </Link>
               </div>
-            </div>
+            </nav>
           </div>
         </div>
       )}

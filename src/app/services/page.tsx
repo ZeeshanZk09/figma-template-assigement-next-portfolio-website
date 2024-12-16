@@ -110,7 +110,7 @@ const services: Service[] = [
   return (
     <section
       id="services"
-      className="min-h-screen w-full transform translate-y-16 flex flex-col items-center my-5 py-16 px-6 md:px-16 bg-gradient-to-b from-gray-100 to-white"
+      className="min-h-screen w-full  flex flex-col justify-center items-center my-5  px-6 md:px-16 "
     >
       <div className="text-center mb-10">
         <h2 className="text-3xl sm:text-4xl text-gray-800">Our Services</h2>
@@ -136,7 +136,7 @@ const services: Service[] = [
                 <li key={index}>{desc}</li>
               ))}
             </ul>
-            <Link href={`/services/${service.title}`}>
+            <Link href={`/services/${service.id}`}>
               <button
                 type="button"
                 className="mt-8 bg-[#04af70cb] hover:bg-[#04AF70] text-white py-3 px-6 rounded-full text-base font-medium shadow-md hover:shadow-lg  transition-transform transform hover:scale-110"

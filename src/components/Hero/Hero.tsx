@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import "./Hero.css";
 
 export const cb = () => (
@@ -13,7 +12,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="flex flex-col md:flex-row-reverse min-h-screen justify-between items-center  px-6 md:px-16 py-24 lg:py-36 bg-white"
+      className="flex flex-col md:flex-row-reverse min-h-screen justify-between items-center  px-6 md:px-16  "
     >
       {/* Image Section */}
       <div className="w-full md:w-1/2 flex flex-col items-center">
